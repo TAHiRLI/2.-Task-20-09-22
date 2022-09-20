@@ -10,97 +10,11 @@
         margin: 0;
         padding: 0;
         color: #545454;
-
+        font-weight: 300;
       }
-      #top {
-        box-sizing: border-box;
-        width: 66%;
-        height: 55vh;
-        background-image: linear-gradient(rgb(231, 231, 231), rgb(255, 255, 250));
-        margin: auto;
-        padding: 20px;
-        margin-bottom: 2vh;
-        border-radius: 10px;
-      }
-      #bottom {
-        width: 66%;
-        height: 50vh;
-        /* background-color: antiquewhite; */
-        margin: auto;
-      }
-
-      #right {
-        display: inline-block;
-        width: 30%;
-        height: 100%;
-        background-image: linear-gradient(rgb(231, 231, 231), rgb(255, 255, 250));
-       
-        padding: 10px;
-        border-radius: 20px;
-      }
-      #left {
-        display: inline-block;
-        width: 66%;
-        height: 100%;
-
-        /* background-color: blueviolet; */
-      }
-      #left1 {
-        width: 100%;
-        height: 50%;
-
-        /* background-color: cadetblue; */
-      }
-      #left2 {
-        margin-top: 20px;
-        width: 100%;
-        height: 50%;
-
-        /* background-color: darkgoldenrod; */
-      }
-      .text {
-        width: 47%;
-        float: right;
-        margin-top: 2%;
-        margin-right: 6%;
-      }
-
-      #greeting {
-        /* background-color: antiquewhite; */
-        height: 25%;
-      }
-      .card {
-        box-sizing: border-box;
-        display: inline-block;
-        width: 24%;
-        height: 75%;
-        /* background-color: blueviolet; */
-        padding: 20px;
-      }
-      #top img {
-        width: 90px;
-        height: 73px;
-        margin-left: 30%;
-      }
-
+      
       h2 {
-        display: inline;
         font-size: 20px;
-      }
-
-      #date {
-        margin-top: 0%;
-        background-image: url(assets/images/bg-date.png);
-        width: 65px;
-        height: 75px;
-        float: left;
-      }
-      #dateSpan {
-        display: block;
-        text-align: center;
-        margin-top: 17%;
-        font-size: 15px;
-        color: white;
       }
 
       li {
@@ -109,11 +23,6 @@
         /* background-color: chartreuse; */
         list-style-type: none;
         padding: 10px;
-      }
-      #liText {
-        margin-left: 10px;
-        display: inline-block;
-        width: 70%;
       }
 
       p {
@@ -126,18 +35,33 @@
         color: #638900;
         text-decoration: none;
         font-weight: 600;
-        
       }
-      hr{
+      hr {
         margin: 10px 0px;
-   
       }
     </style>
   </head>
   <body>
-    <div id="top">
-      <div id="greeting">
-        <h1>Welcome to our site</h1>
+    <!-- top part -->
+    <div
+      style="
+        box-sizing: border-box;
+        width: 66%;
+        height: 55vh;
+        background-image: linear-gradient(
+          rgb(231, 231, 231),
+          rgb(255, 255, 250)
+        );
+        margin: auto;
+        padding: 20px;
+        margin-bottom: 2vh;
+        border-radius: 10px;
+      "
+    >
+      <div  style=" height: 25%;">
+        <h1 style="font-size: 25px; margin-bottom: 20px">
+          Welcome to our site
+        </h1>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totamlo rem aperiam, eaque ipsa
@@ -146,8 +70,20 @@
       </div>
       <hr />
 
-      <div class="card">
-        <img src="assets/images/icon1.png" alt="business planning" />
+      <div
+        style="
+          box-sizing: border-box;
+          display: inline-block;
+          width: 24%;
+          height: 75%;
+          padding: 20px;
+        "
+      >
+        <img
+          src="assets/images/icon1.png"
+          alt="business planning"
+          style="width: 90px; height: 73px; margin-left: 30%"
+        />
         <h2>Business planning</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -156,8 +92,20 @@
         </p>
       </div>
 
-      <div class="card">
-        <img src="assets/images/icon2.png" alt="management" />
+      <div
+        style="
+          box-sizing: border-box;
+          display: inline-block;
+          width: 24%;
+          height: 75%;
+          padding: 20px;
+        "
+      >
+        <img
+          src="assets/images/icon2.png"
+          alt="management"
+          style="width: 90px; height: 73px; margin-left: 30%"
+        />
         <h2>Finance management</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -166,8 +114,20 @@
         </p>
       </div>
 
-      <div class="card">
-        <img src="assets/images/icon3.png " alt="reliable" /><br>
+      <div
+        style="
+          box-sizing: border-box;
+          display: inline-block;
+          width: 24%;
+          height: 75%;
+          padding: 20px;
+        "
+      >
+        <img
+          src="assets/images/icon3.png "
+          alt="reliable"
+          style="width: 90px; height: 73px; margin-left: 30%"
+        /><br />
         <h2>Reliable applications</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -176,8 +136,20 @@
         </p>
       </div>
 
-      <div class="card">
-        <img src="assets/images/icon4.png" alt="support" /><br>
+      <div
+        style="
+          box-sizing: border-box;
+          display: inline-block;
+          width: 24%;
+          height: 75%;
+          padding: 20px;
+        "
+      >
+        <img
+          src="assets/images/icon4.png"
+          alt="support"
+          style="width: 90px; height: 73px; margin-left: 30%"
+        /><br />
         <h2>24 Hours support</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -186,13 +158,17 @@
         </p>
       </div>
     </div>
-
-    <div id="bottom">
-      <div id="left">
-        <div id="left1">
+    <!-- bottom part -->
+    <div style="width: 66%; height: 50vh; margin: auto">
+      <!-- Left  side -->
+      <div style="display: inline-block; width: 66%; height: 100%">
+        <!-- left top div-->
+        <div style="width: 100%; height: 50%">
           <img src="assets/images/pic1.gif" alt="pic1" style="height: 100%" />
 
-          <div class="text">
+          <div
+            style="width: 47%; float: right; margin-top: 2%; margin-right: 6%"
+          >
             <h2>Market analytics</h2>
             <p>
               Duis aute irure dolor in reprehenderit vol uptate velit esse
@@ -200,15 +176,19 @@
               cupidatat proident sun in culpa qui officia deserunt mollit anim
               id est laborum duis aute irure dolor in repreh dolore magnam.
             </p>
-            <hr />
 
+            <hr />
             <a href="#">Get quote / Detail info</a>
           </div>
         </div>
-        <div id="left2">
+
+        <!-- left bottom div -->
+        <div style="margin-top: 20px; width: 100%; height: 50%">
           <img src="assets/images/pic2.gif" alt="pic2" style="height: 100%" />
 
-          <div class="text">
+          <div
+            style="width: 47%; float: right; margin-top: 2%; margin-right: 6%"
+          >
             <h2>Market analytics</h2>
             <p>
               Duis aute irure dolor in reprehenderit vol uptate velit esse
@@ -223,43 +203,112 @@
         </div>
       </div>
 
-      <ul id="right">
-        <h2>Upcoming event</h2>
+      <!-- Right side -->
+      <ul
+        style="
+          display: inline-block;
+          width: 30%;
+          height: 100%;
+          background-image: linear-gradient(
+            rgb(231, 231, 231),
+            rgb(255, 255, 250)
+          );
+
+          padding: 10px;
+          border-radius: 20px;
+        "
+      >
+        <h2 style="margin: 10px">Upcoming event</h2>
+
         <li>
-          <div id="date">
-            <span id="dateSpan">24 <br />July�10</span>
+          <div
+            style="
+              margin-top: 0%;
+              background-image: url(assets/images/bg-date.png);
+              width: 65px;
+              height: 75px;
+              float: left;
+            "
+          >
+            <span
+              style="
+                display: block;
+                text-align: center;
+                margin-top: 17%;
+                font-size: 15px;
+                color: white;
+              "
+              >24 <br />July�10</span
+            >
           </div>
-          <div id="liText">
-            <p>     <strong> Temporibus autem quidam</strong>
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod</p>
+          <div style="margin-left: 10px; display: inline-block; width: 70%">
+            <p>
+              <strong> Temporibus autem quidam</strong> Nam libero tempore, cum
+              soluta nobis est eligendi optio cumque nihil impedit quo minus id
+              quod
+            </p>
+          </div>
+        </li>
+        <li>
+          <div
+            style="
+              margin-top: 0%;
+              background-image: url(assets/images/bg-date.png);
+              width: 65px;
+              height: 75px;
+              float: left;
+            "
+          >
+            <span
+              style="
+                display: block;
+                text-align: center;
+                margin-top: 17%;
+                font-size: 15px;
+                color: white;
+              "
+              >24 <br />July�10</span
+            >
+          </div>
+          <div style="margin-left: 10px; display: inline-block; width: 70%">
+            <p>
+              <strong> Temporibus autem quidam</strong> Nam libero tempore, cum
+              soluta nobis est eligendi optio cumque nihil impedit quo minus id
+              quod
+            </p>
+          </div>
+        </li>
+        <li>
+          <div
+            style="
+              margin-top: 0%;
+              background-image: url(assets/images/bg-date.png);
+              width: 65px;
+              height: 75px;
+              float: left;
+            "
+          >
+            <span
+              style="
+                display: block;
+                text-align: center;
+                margin-top: 17%;
+                font-size: 15px;
+                color: white;
+              "
+              >24 <br />July�10</span
+            >
+          </div>
+          <div style="margin-left: 10px; display: inline-block; width: 70%">
+            <p>
+              <strong> Temporibus autem quidam</strong> Nam libero tempore, cum
+              soluta nobis est eligendi optio cumque nihil impedit quo minus id
+              quod
+            </p>
           </div>
         </li>
 
-        <li>
-          <div id="date">
-            <span id="dateSpan">24 <br />July�10</span>
-          </div>
-          <div id="liText">
-            <p>     <strong> Temporibus autem quidam</strong>
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod</p>
-       
-          </div>
-        </li>
-
-        <li>
-          <div id="date">
-            <span id="dateSpan">24 <br />July�10</span>
-          </div>
-          <div id="liText">
-            <p>     <strong> Temporibus autem quidam</strong>
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod</p>
-          </div>
-        </li>
-        
-        <br>
+        <br />
       </ul>
     </div>
   </body>
