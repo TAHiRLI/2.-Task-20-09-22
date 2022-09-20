@@ -13,66 +13,117 @@
       #top {
         box-sizing: border-box;
         width: 66%;
-        height: 60vh;
-        background-color: aqua;
+        height: 55vh;
+        /* background-color: aqua; */
         margin: auto;
-        margin-bottom: 5vh;
         padding: 20px;
       }
       #bottom {
         width: 66%;
         height: 50vh;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
         margin: auto;
       }
 
       #right {
         display: inline-block;
-        width: 33%;
-        height: 90%;
-        background-color: dodgerblue;
+        width: 30%;
+        height: 100%;
+        /* background-color: dodgerblue; */
+        padding: 10px;
       }
       #left {
         display: inline-block;
         width: 66%;
-        height: 90%;
-        margin-top: 0;
-        background-color: blueviolet;
+        height: 100%;
+
+        /* background-color: blueviolet; */
       }
       #left1 {
         width: 100%;
         height: 50%;
 
-        background-color: cadetblue;
+        /* background-color: cadetblue; */
       }
       #left2 {
+        margin-top: 20px;
         width: 100%;
         height: 50%;
 
-        background-color: darkgoldenrod;
+        /* background-color: darkgoldenrod; */
+      }
+      .text {
+        width: 47%;
+        float: right;
+        margin-top: 2%;
+        margin-right: 6%;
       }
 
       #greeting {
-        background-color: antiquewhite;
-        height: 30%;
-        margin-bottom: 5%;
+        /* background-color: antiquewhite; */
+        height: 25%;
       }
       .card {
         box-sizing: border-box;
         display: inline-block;
-        width: 24.65%;
-        height: 60%;
-        background-color: blueviolet;
-        padding: 10px;
+        width: 24%;
+        height: 75%;
+        /* background-color: blueviolet; */
+        padding: 20px;
       }
-      img {
-        width: 40%;
-        height: 40%;
+      #top img {
+        width: 90px;
+        height: 73px;
         margin-left: 30%;
       }
 
       h2 {
+        display: inline;
         font-size: 20px;
+      }
+
+      #date {
+        margin-top: 0%;
+        background-image: url(assets/images/bg-date.png);
+        width: 65px;
+        height: 75px;
+        float: left;
+      }
+      #dateSpan {
+        display: block;
+        text-align: center;
+        margin-top: 17%;
+        font-size: 15px;
+        color: white;
+      }
+
+      li {
+        margin-top: 10px;
+        height: 22%;
+        /* background-color: chartreuse; */
+        list-style-type: none;
+        padding: 10px;
+      }
+      #liText {
+        margin-left: 10px;
+        display: inline-block;
+        width: 70%;
+      }
+
+      p {
+        margin: 8px 0px;
+        font-size: 15px;
+        line-height: 15px;
+        text-align: justify;
+      }
+      a {
+        color: #638900;
+        text-decoration: none;
+        font-weight: 600;
+        
+      }
+      hr{
+        margin: 10px 0px;
       }
     </style>
   </head>
@@ -109,7 +160,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/icon3.png " alt="reliable" />
+        <img src="assets/images/icon3.png " alt="reliable" /><br>
         <h2>Reliable applications</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -119,7 +170,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/icon4.png" alt="support" />
+        <img src="assets/images/icon4.png" alt="support" /><br>
         <h2>24 Hours support</h2>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -128,12 +179,81 @@
         </p>
       </div>
     </div>
+
     <div id="bottom">
       <div id="left">
-        <div id="left1"></div>
-        <div id="left2"></div>
+        <div id="left1">
+          <img src="assets/images/pic1.gif" alt="pic1" style="height: 100%" />
+
+          <div class="text">
+            <h2>Market analytics</h2>
+            <p>
+              Duis aute irure dolor in reprehenderit vol uptate velit esse
+              cillum dolore eu fugiat nulla pariatur excepteur sint occae cates
+              cupidatat proident sun in culpa qui officia deserunt mollit anim
+              id est laborum duis aute irure dolor in repreh dolore magnam.
+            </p>
+            <hr />
+
+            <a href="#">Get quote / Detail info</a>
+          </div>
+        </div>
+        <div id="left2">
+          <img src="assets/images/pic2.gif" alt="pic2" style="height: 100%" />
+
+          <div class="text">
+            <h2>Market analytics</h2>
+            <p>
+              Duis aute irure dolor in reprehenderit vol uptate velit esse
+              cillum dolore eu fugiat nulla pariatur excepteur sint occae cates
+              cupidatat proident sun in culpa qui officia deserunt mollit anim
+              id est laborum duis aute irure dolor in repreh dolore magnam.
+            </p>
+
+            <hr />
+            <a href="#">Get quote / Detail info</a>
+          </div>
+        </div>
       </div>
-      <div id="right"></div>
+
+      <ul id="right">
+        <h2>Upcoming event</h2>
+        <li>
+          <div id="date">
+            <span id="dateSpan">24 <br />July�10</span>
+          </div>
+          <div id="liText">
+            <p>     <strong> Temporibus autem quidam</strong>
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod</p>
+          </div>
+        </li>
+
+        <li>
+          <div id="date">
+            <span id="dateSpan">24 <br />July�10</span>
+          </div>
+          <div id="liText">
+            <p>     <strong> Temporibus autem quidam</strong>
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod</p>
+       
+          </div>
+        </li>
+
+        <li>
+          <div id="date">
+            <span id="dateSpan">24 <br />July�10</span>
+          </div>
+          <div id="liText">
+            <p>     <strong> Temporibus autem quidam</strong>
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+              impedit quo minus id quod</p>
+          </div>
+        </li>
+        
+        <br>
+      </ul>
     </div>
   </body>
 </html>
